@@ -1,0 +1,11 @@
+# Liora Fashion RAG bot - Python 3.12
+# Exact versions verified to install together on 2026-11-06.
+
+llama-index-core==0.14.25
+llama-index-llms-openai==0.8.3
+llama-index-embeddings-openai==0.7.0
+llama-index-vector-stores-chroma==0.6.0
+chromadb==1.5.9
+streamlit==1.67.0
+python-dotenv==1.2.4
+pandas==3.1.1

@@ -1,0 +1,28 @@
+# Secrets - never commit
+.env
+
+# Virtual environment
+.venv/
+
+# Generated vector database (rebuilt by ingest.py)
+chroma_db/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.pyc
+ApiKey.txt
+chroma_db/
+.streamlit/secrets.toml

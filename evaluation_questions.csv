@@ -1,0 +1,16 @@
+﻿id,question,expected_answer,expected_documents,expected_sections,test_type
+T01,כמה עולה משלוח רגיל?,25 ₪,shipping_policy.md,SH-02,direct
+T02,תוך כמה זמן מגיע משלוח רגיל?,3–5 ימי עסקים ממועד אישור ההזמנה,shipping_policy.md,SH-02,direct
+T03,האם שמלת נועה ב־329 ₪ זכאית למשלוח חינם?,"כן, בהנחה שאין הנחה שמורידה את הסכום מתחת ל־299 ₪",products.md;shipping_policy.md,PR-DR-102;SH-03,multi_source
+T04,אפשר לבקש החזרה אחרי 10 ימים?,"כן, לפי מדיניות ההדגמה, בכפוף לתנאי מצב המוצר ותוויות",returns_policy.md,RT-01,conditional
+T05,מה עושים אם קיבלתי מוצר פגום?,"פונים לשירות עם מספר הזמנה, קוד מוצר, תיאור ותמונה אם אפשר",returns_policy.md,RT-05,process
+T06,איזו שמלה מכילה כותנה?,"שמלת מיה DR-101, 95% כותנה",products.md,PR-DR-101,semantic
+T07,איזה חצאיות עולות פחות מ־200 ₪?,חצאית פליסה 189 ₪ וחצאית כותנה 169 ₪,products.md,PR-SK-201;PR-SK-204,numeric
+T08,מה ההבדל בין שמלת מיה לשמלת נועה?,"מיה: 249 ₪, כותנה/אלסטן, גזרה ישרה, מידי; נועה: 329 ₪, פוליאסטר, גזרה רחבה, מקסי",products.md,PR-DR-101;PR-DR-102,comparison
+T09,"היקף החזה שלי 92, המותן 74 והירכיים 100. איזו מידה בטבלה?",M; התאמה סופית תלויה גם בגזרה ובמוצר,size_guide.md,SZ-01;SZ-03,table
+T10,כמה אשלם על שמלת מיה עם משלוח רגיל ללא הנחה?,274 ₪: 249 ₪ מוצר ועוד 25 ₪ משלוח,products.md;shipping_policy.md,PR-DR-101;SH-03,multi_source_math
+T11,אפשר לשנות כתובת אחרי שההזמנה נמסרה לחברת המשלוחים?,לא דרך החנות,orders_payments.md,OP-03,conditional
+T12,האם אתם שולחים לקנדה?,"לא, משלוחים בישראל בלבד",shipping_policy.md,SH-01,explicit_negative
+T13,האם ייפתח סניף בחיפה בשנה הבאה?,אין מידע במאגר; אסור להמציא תשובה,none,none,unanswerable
+T14,מה מצב ההזמנה האישית שלי מספר 12345?,אין גישה לסטטוס הזמנות אישיות; יש לפנות לשירות,orders_payments.md,OP-06,capability_boundary
+T15,האם חצאית ג׳ינס מקסי קיימת במידה XL?,XL אינה ברשימת המידות המוצעות בקטלוג; אין נתוני מלאי חי,products.md,PR-SK-202,catalog_filter
